@@ -23,14 +23,21 @@ public:
 	Lense_18_55_f_3_5() = default;
 	virtual ~Lense_18_55_f_3_5() = default;
 
-	void Execute(ImageFacade& rawImage,
-				ImageFacade& readyImage,
-				size_t currentFocusDistanse,
-				size_t currentApperture) override;
+	ImageFacade Execute(ImageFacade& rawImage) override;
 
 	const size_t getMaxFocusDistanse() const override;
 	const size_t getMinFocusDistanse() const override;
 
 	const double getMaxApperture() const override;
 	const double getMinApperture() const override;
+
+	void increaseFocusDistance();
+	void decreaseFocusDistance();
+
+	void increaseApperture();
+	void decreaseApperture();
+
+private:
+	size_t _currentFocusDistanse;
+	size_t _currentApperture;
 };

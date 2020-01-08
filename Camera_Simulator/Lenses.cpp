@@ -1,6 +1,6 @@
 #include "Lenses.h"
 
-void Lense_18_55_f_3_5::Execute(ImageFacade& rawImage, ImageFacade& readyImage, size_t currentFocusDistanse, size_t currentApperture)
+void Lense_18_55_f_3_5::Execute(ImageFacade& rawImage)
 {
 }
 
@@ -16,10 +16,30 @@ const size_t Lense_18_55_f_3_5::getMinFocusDistanse() const
 
 const double Lense_18_55_f_3_5::getMaxApperture() const
 {
-	return 0.0;
+	return 3.5;
 }
 
 const double Lense_18_55_f_3_5::getMinApperture() const
 {
-	return 0.0;
+	return 25;
+}
+
+void Lense_18_55_f_3_5::increaseFocusDistance()
+{
+	if (_currentFocusDistanse <= getMaxFocusDistanse())
+		_currentFocusDistanse++;
+}
+
+void Lense_18_55_f_3_5::decreaseFocusDistance()
+{
+	if (_currentFocusDistanse >= getMinFocusDistanse())
+		_currentFocusDistanse--;
+}
+
+void Lense_18_55_f_3_5::increaseApperture()
+{
+}
+
+void Lense_18_55_f_3_5::decreaseApperture()
+{
 }
