@@ -125,8 +125,10 @@
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="ImageFacade.h" />
-    <ClInclude Include="LenseInitializer.h" />
     <ClInclude Include="LenseInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -4,6 +4,8 @@
     <ClInclude Include="LenseInterface.h" />
     <ClInclude Include="ImageFacade.h" />
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="LenseInitializer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
   </ItemGroup>
 </Project>
