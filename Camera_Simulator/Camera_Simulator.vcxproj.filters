@@ -4,8 +4,11 @@
     <ClInclude Include="LenseInterface.h" />
     <ClInclude Include="ImageFacade.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="Lenses.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Lenses.cpp" />
   </ItemGroup>
 </Project>
