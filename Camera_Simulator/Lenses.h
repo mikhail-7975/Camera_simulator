@@ -23,7 +23,7 @@ public:
 	Lense_18_55_f_3_5() = default;
 	virtual ~Lense_18_55_f_3_5() = default;
 
-	ImageFacade Execute(ImageFacade& rawImage) override;
+	ImageFacade Execute(const ImageFacade& rawImage) override;
 
 	const size_t getMaxFocusDistanse() const override;
 	const size_t getMinFocusDistanse() const override;

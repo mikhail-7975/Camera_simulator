@@ -2,5 +2,25 @@
 
 void camera::takePhoto()
 {
-	_Lense->Execute(_rawImage, _reagyImage, _currentApperture, _currentFocusDistanse);
+	_Lense->Execute(*_rawImage);
+}
+
+void camera::increaseFocusDistance()
+{
+	_Lense->increaseFocusDistance();
+}
+
+void camera::decreaseFocusDistance()
+{
+	_Lense->decreaseFocusDistance();
+}
+
+void camera::increaseApperture()
+{
+	_Lense->increaseApperture();
+}
+
+void camera::decreaseApperture()
+{
+	_Lense->decreaseApperture();
 }

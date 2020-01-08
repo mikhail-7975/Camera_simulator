@@ -12,6 +12,12 @@ public:
 
 	void takePhoto(); //"пропустить" изображение через объектив. 
 	void showReadyImage() {};//показать готовое изображение
+
+	void increaseFocusDistance();
+	void decreaseFocusDistance();
+
+	void increaseApperture();
+	void decreaseApperture();
 private:
 	std::unique_ptr<LenseInterface> _Lense;
 	std::unique_ptr<ImageFacade> _rawImage; //изображение, которое видит глаз

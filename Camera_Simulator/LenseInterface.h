@@ -7,7 +7,7 @@ public:
 	LenseInterface() = default;
 	virtual ~LenseInterface() = default;
 	
-	virtual ImageFacade Execute(ImageFacade& rawImage) = 0;
+	virtual ImageFacade Execute(const ImageFacade& rawImage) = 0;
 
 	virtual const size_t getMaxFocusDistanse() const = 0;
 	virtual const size_t getMinFocusDistanse() const = 0;
