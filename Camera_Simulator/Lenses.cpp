@@ -1,5 +1,9 @@
 #include "Lenses.h"
 
+void Lense_18_55_f_3_5::Execute(ImageFacade& rawImage, ImageFacade& readyImage, size_t currentFocusDistanse, size_t currentApperture)
+{
+}
+
 const size_t Lense_18_55_f_3_5::getMaxFocusDistanse() const
 {
 	return 18;

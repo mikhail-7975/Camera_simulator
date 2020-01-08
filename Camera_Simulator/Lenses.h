@@ -22,6 +22,12 @@ class Lense_18_55_f_3_5 final: public LenseInterface {
 public:
 	Lense_18_55_f_3_5() = default;
 	virtual ~Lense_18_55_f_3_5() = default;
+
+	void Execute(ImageFacade& rawImage,
+				ImageFacade& readyImage,
+				size_t currentFocusDistanse,
+				size_t currentApperture) override;
+
 	const size_t getMaxFocusDistanse() const override;
 	const size_t getMinFocusDistanse() const override;
 

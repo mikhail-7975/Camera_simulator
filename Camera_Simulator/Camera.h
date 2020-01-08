@@ -7,8 +7,8 @@
 class camera {
 public:
 	camera() = default;
-	void setLense(LenseInterface& Lense); //поставить объектив
-	void setRawImage(ImageFacade& rawImage);
+	void setLense(LenseInterface& Lense) {}; //поставить объектив
+	void setRawImage(ImageFacade& rawImage) {};
 
 	void increaseFocusDistance();
 	void decreaseFocusDistance();
@@ -17,7 +17,7 @@ public:
 	void decreaseApperture();
 
 	void takePhoto(); //"пропустить" изображение через объектив. 
-	void showReadyImage();//показать готовое изображение
+	void showReadyImage() {};//показать готовое изображение
 private:
 	/*
 	текущие значения фокусного расстояния и диафрагмы
