@@ -1,20 +1,23 @@
 #pragma once
 #include "ImageFacade.h"
+#include "LenseInterface.h"
 #include <string>
+#include <memory>
 
 class camera {
 public:
+	camera() = default;
 	/*
 	методы, измен€ющие параметры объектива
 	*/
-	void changeLense(); //поставить другой объектив
+	void setLense(); //поставить объектив
 	void takePhoto(); //"пропустить" изображение через объектив. 
-	//работать будет по аналогии с result = Operation_::InitOperation()->Execute(_firstNumber, _operationSymbol, _secondNumber);
 	void showReadyImage();//показать готовое изображение
 private:
 	/*
-	текущие значени€ фокусного рассто€ни€ и диафрагмы*/
-   
+	текущие значени€ фокусного рассто€ни€ и диафрагмы
+	*/
+	std::unique_ptr<LenseInterface> Lense;
 	std::string lenseName;
 	ImageFacade rawImage; //изображение, которое видит глаз
 	ImageFacade reagyImage; //изображение, которое получаетс€ после прохождени€ через объектив
